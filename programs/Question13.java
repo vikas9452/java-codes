@@ -1,3 +1,5 @@
+//it is a program to check if number is EVEN or ODD
+
 import java.util.Scanner;
 
 public class EvenOdd {
