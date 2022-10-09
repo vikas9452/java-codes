@@ -1,19 +1,22 @@
+//java program to question 12
+//Java Program to demonstrate the use of Nested if else clause
+
 public class NestedIfElse
 {
 
-public static void main(String... ar)
+public static void main(String args[])
 {
 int marks=99;
 if(marks<100)
 {
-	if(marks<98)
-		System.out.println("marks is less than 100 & marks is also less than 98");
+	if(marks>90)
+		System.out.println("a+ grade");
 	else
-		System.out.println("marks is less than 100 but marks is not less than 98");
+		System.out.println("less than a grade");
 }
 
 else 
-	System.out.println("marks is not less than 100");
+	System.out.println("invalid marks");
 
 }
 
