@@ -1,12 +1,30 @@
-class Vehicle{  
-  void run(){System.out.println("Vehicle is running");}  
-}  
+class Parent { 
+  void show() 
+  { 
+      System.out.println("Parent's show()"); 
+  } 
+} 
 
-class Bike extends Vehicle{  
-  public static void main(String args[]){  
-  
-  Bike obj = new Bike();  
-  
-  obj.run();  
-  }  
-}  
+
+class Child extends Parent { 
+ 
+  @Override
+  void show() 
+  { 
+      System.out.println("Child's show()"); 
+  } 
+} 
+
+
+class Question100 { 
+  public static void main(String[] args) 
+  { 
+      
+      Parent obj1 = new Parent(); 
+      obj1.show(); 
+
+    
+      Parent obj2 = new Child(); 
+      obj2.show(); 
+  } 
+} 
