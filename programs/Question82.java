@@ -10,7 +10,7 @@ public class Question82 {
         
         long varLong = Long.parseLong(str);
  
-      
+        
         System.out.println("Long - " + varLong);
     }
 }
