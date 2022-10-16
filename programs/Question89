@@ -1,0 +1,20 @@
+import java.util.HashSet;
+
+class Main {
+    public static void main(String[] args) {
+        HashSet<Integer> evenNumber = new HashSet<>();
+
+        // Using add() method
+        evenNumber.add(2); //Adds 2 into the hashset
+        evenNumber.add(4); //Adds 4 into the hashset
+        evenNumber.add(6); //Adds 6 into the hashset
+        System.out.println("HashSet: " + evenNumber);
+
+        HashSet<Integer> numbers = new HashSet<>();
+        
+        // Using addAll() method
+        numbers.addAll(evenNumber);
+        numbers.add(5);
+        System.out.println("New HashSet: " + numbers);
+    }
+}

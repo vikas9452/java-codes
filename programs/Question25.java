@@ -1,11 +1,17 @@
-import java.util.Scanner;
-class Question25{
-    public static void main(String[] args){
-        System.out.println("Enter number for which you need multiplication table");
-        Scanner scanner=new Scanner(System.in);
-        int tableNumber=scanner.nextInt();
-        for(int i=1;i<=20;i++){
-            System.out.println(i+" X "+tableNumber+" = "+i*tableNumber);
+
+//java program to print multiplication table
+
+import java.util.Scanner;  
+public class MultiplicationTable {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number");
+        int num = sc.nextInt();
+        for(int i = 1; i <= 10; ++i)
+        {
+            System.out.printf("%d * %d = %d \n", num, i, num * i);
+
         }
     }
 }
