@@ -1,3 +1,4 @@
+
 //java program to print multiplication table
 
 import java.util.Scanner;  
@@ -10,6 +11,7 @@ public class MultiplicationTable {
         for(int i = 1; i <= 10; ++i)
         {
             System.out.printf("%d * %d = %d \n", num, i, num * i);
+
         }
     }
 }
