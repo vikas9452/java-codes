@@ -1,0 +1,22 @@
+class Find
+{
+    static int arr[] = {3, 76, 111, 54, 69};
+    static int largest()
+    {
+        int i;
+        
+        int max = arr[0];
+
+        // compare every element with current max element starting from second.
+        for (i = 1; i < arr.length; i++)
+            if (arr[i] > max)
+                max = arr[i];
+         
+        return max;
+    }
+
+    public static void main(String[] args)
+    {
+        System.out.println("Largest number in given array is " + largest());
+    }
+}
